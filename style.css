@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  background: hsl(204, 86%, 23%);
+}
+.wheather-app {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  border: 2px solid #3498db;
+  outline: none;
+  caret-color: red;
+}
+
+.search-btn {
+  background-color: #3498db;
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 8.3s ease;
+}
+.search-btn:hover {
+  background-color: #3498db;
+}
+.search-btn i {
+  color: white;
+  text-align: center;
+}
+.city-date-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.city-date-section .city {
+  font-size: 2rem;
+  opacity: 0.9;
+}
+.city-date-section .date {
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.temperature-info {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temperature-info .temp {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.temperature-info .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.temperature-info .description i {
+  font-size: 1.9rem;
+  opacity: 0.8;
+}
+.temperature-info .description span {
+  font-size: 1.9rem;
+}
+.additional-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.wind-info,
+.humidity-info,
+.visibility-info {
+  background-color: #ecf8f1;
+  width: 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+.additional-info .material-icons {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+  text-align: center;
+}
